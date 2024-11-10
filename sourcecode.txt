@@ -1,0 +1,29 @@
+// Define the main class
+public class HelloWorld {
+
+    // Main method where the program starts
+    public static void main(String[] args) {
+        // Create an instance of the Greet class
+        Greet greet = new Greet();
+        
+        // Call the greet method
+        greet.sayHello();
+        
+        // Call the method with a name argument
+        greet.sayHello("Alice");
+    }
+}
+
+// Define another class named 'Greet'
+class Greet {
+
+    // Method that prints a simple greeting message
+    public void sayHello() {
+        System.out.println("Hello, World!");
+    }
+
+    // Method that takes a name argument and prints a personalized greeting
+    public void sayHello(String name) {
+        System.out.println("Hello, " + name + "!");
+    }
+}
